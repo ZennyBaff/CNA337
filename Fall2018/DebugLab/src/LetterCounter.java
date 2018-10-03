@@ -11,9 +11,10 @@ class LetterCounter {
     String single_letter = "";
     int i;
     for (i = 0; i< check_word.length(); i++) {
-      single_letter = check_word.substring(1, 1);
+      single_letter = check_word.substring(i, i + 1);
       if (single_letter.equals("g")) {
         LetterCount++;
+
       }
     }
     System.out.println("G was found " + LetterCount + " times in the word " + check_word);
